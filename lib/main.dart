@@ -1,12 +1,12 @@
-import 'package:bloc/bloc.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:hexcolor/hexcolor.dart';
 import 'package:news_app/cubit/bloc_observer.dart';
 import 'package:news_app/cubit/news_app_cubit.dart';
-import 'package:news_app/dio/dio_helper.dart';
+
 import 'package:news_app/home_app.dart';
+import 'package:news_app/network/dio/dio_helper.dart';
 void main()async {
   Bloc.observer = MyBlocObserver();
   DioHelper.init();

@@ -1,5 +1,8 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:news_app/core/utilites/constant.dart';
+import 'package:news_app/cubit/news_app_cubit.dart';
+import 'package:news_app/widgets/custom_Image.dart';
 import 'package:news_app/widgets/custom_WebView_Screen.dart';
 
 import 'custom_Text.dart';
@@ -16,15 +19,7 @@ class CustomScreenBuilder extends StatelessWidget {
       title:Row(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
-          Image(
-            image: NetworkImage(list['urlToImage'].toString()),
-            height: 120,
-            width: 120,
-            fit: BoxFit.fill,
-            errorBuilder: (context, error, stackTrace) {
-              return const Center(child: Text("Image not found"));
-            },
-          ),
+          Images(networkImage:list['urlToImage'].toString()),
           const SizedBox(width:10),
           Expanded(
             child: Column(

@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:news_app/core/utilites/app_strings.dart';
 import 'package:news_app/core/utilites/constant.dart';
-import 'package:news_app/dio/dio_helper.dart';
+import 'package:news_app/network/dio/dio_helper.dart';
 import 'package:news_app/screens/business.dart';
 import 'package:news_app/screens/science.dart';
 import 'package:news_app/screens/sports.dart';
